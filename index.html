@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마법의 소라고둥 | 사주·자미두수·점성술 AI 심리 코칭</title>
+<meta name="description" content="당신의 명반을 분석해 AI가 전하는 맞춤 감정 케어. 사주, 자미두수, 점성술 데이터를 기반으로 위로와 조언을 받아보세요.">
+
+<!-- Pretendard 웹폰트 (디자인 가이드: System Font - Pretendard) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== 헤더 ==================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="마법의 소라고둥 홈으로 이동">
+      <span class="logo-icon" aria-hidden="true">🐚</span>
+      <span class="logo-text">마법의 소라고둥</span>
+    </a>
+    <a href="#hero-cta" class="btn btn-outline btn-small">상담 시작</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ==================== 히어로 (캐러셀) ==================== -->
+  <section class="hero" aria-label="메인 소개">
+    <!-- 캐러셀: 자동재생 + 수동 전환 -->
+    <div class="carousel" id="heroCarousel" aria-roledescription="carousel" aria-label="밤하늘 배경 이미지">
+      <ul class="carousel-track" id="carouselTrack">
+        <li class="carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 / 3">
+          <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1600&q=80" alt="은하수가 펼쳐진 몽환적인 밤하늘">
+        </li>
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 / 3">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80" alt="별빛이 가득한 깊은 밤하늘">
+        </li>
+        <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 / 3">
+          <img src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?auto=format&fit=crop&w=1600&q=80" alt="보라빛 오로라와 별이 있는 밤하늘">
+        </li>
+      </ul>
+
+      <!-- 캐러셀 인디케이터 -->
+      <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="슬라이드 선택">
+        <button class="dot is-active" role="tab" aria-selected="true" aria-controls="slide-1" data-index="0" aria-label="1번째 이미지 보기"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="slide-2" data-index="1" aria-label="2번째 이미지 보기"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="slide-3" data-index="2" aria-label="3번째 이미지 보기"></button>
+      </div>
+    </div>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <span class="badge">사주 · 자미두수 · 점성술 AI 상담</span>
+      <h1 class="hero-title">
+        별들이 들려주는<br>
+        <em>당신만의 이야기</em>에서<br>
+        위로를 찾으세요
+      </h1>
+      <p class="hero-desc">당신의 명반을 분석해 AI가 전하는 맞춤 감정 케어로 <br class="only-desktop">불안을 내려놓고 방향을 잡으세요</p>
+
+      <div class="hero-cta-group" id="hero-cta">
+        <a href="#service" class="btn btn-primary">
+          <span aria-hidden="true">✦</span> 첫 상담 무료로 시작하기
+        </a>
+        <a href="#process" class="btn btn-link">이용 방법 알아보기→<span aria-hidden="true"></span></a>
+      </div>
+
+      <dl class="hero-stats">
+        <div class="stat">
+          <dt>평균 만족도</dt>
+          <dd>4.9<span aria-hidden="true">★</span></dd>
+        </div>
+        <div class="stat">
+          <dt>상담 대기 소요</dt>
+          <dd>1분</dd>
+        </div>
+        <div class="stat">
+          <dt>첫 상담 무료</dt>
+          <dd>무료</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ==================== 서비스 안내 ==================== -->
+  <section class="section" id="service" aria-labelledby="service-heading">
+    <div class="container">
+      <p class="eyebrow">서비스 안내</p>
+      <h2 id="service-heading" class="h1">당신을 이해하는<br>4가지 방식</h2>
+      <p class="section-desc">단순한 명리학이 아닙니다.<br>자신을 깊이 이해하기 위한 거울입니다.</p>
+
+      <ul class="card-grid">
+        <li class="card">
+          <span class="card-icon" aria-hidden="true">★</span>
+          <h3 class="h2">개인 맞춤<br>명반 분석</h3>
+          <p class="body-2">생년월일과 출생시간으로 개인의 고유한 운명 차트를 생성합니다.</p>
+        </li>
+        <li class="card">
+          <span class="card-icon" aria-hidden="true">♡</span>
+          <h3 class="h2">AI 감정<br>상담</h3>
+          <p class="body-2">명반 데이터와 심리학을 결합한 맞춤형 조언을 제공합니다.</p>
+        </li>
+        <li class="card">
+          <span class="card-icon" aria-hidden="true">☺</span>
+          <h3 class="h2">자기 이해<br>인사이트</h3>
+          <p class="body-2">자기 자신의 반복되는 패턴과 선택의 이유를 깊이 이해하게 됩니다.</p>
+        </li>
+        <li class="card">
+          <span class="card-icon" aria-hidden="true">☾</span>
+          <h3 class="h2">고민 커뮤니티<br>지원</h3>
+          <p class="body-2">같은 고민을 가진 분들과 익명으로 나누고 성장합니다.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== 이용 과정 ==================== -->
+  <section class="section section-alt" id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <p class="eyebrow">이용 과정</p>
+      <h2 id="process-heading" class="h1">자기 발견의 여정,<br>4단계면 충분합니다.</h2>
+
+      <ol class="step-list">
+        <li class="step">
+          <span class="step-number" aria-hidden="true">1</span>
+          <div class="step-body">
+            <h3 class="h2">계정 만들기</h3>
+            <p class="body-2">이메일과 기본 정보로 회원가입 합니다.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">2</span>
+          <div class="step-body">
+            <h3 class="h2">명반 차트 생성</h3>
+            <p class="body-2">생년월일, 출생시간, 태어난 장소를 입력하면 당신의 고유한 명반 데이터 차트가 즉시 완성됩니다.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">3</span>
+          <div class="step-body">
+            <h3 class="h2">고민 나누기</h3>
+            <p class="body-2">직업, 인간관계, 자존감 등 지금 마음속에 있는 고민들을 자유롭게 입력하세요.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">4</span>
+          <div class="step-body">
+            <h3 class="h2">맞춤 고민해결 받기</h3>
+            <p class="body-2">AI가 명반 데이터와 고민을 분석하여 깊이 있고 따뜻한 조언을 전합니다.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== 사용자 후기 ==================== -->
+  <section class="section" id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+      <p class="eyebrow">사용자 후기</p>
+      <h2 id="reviews-heading" class="h1">변화를 경험한 사람들</h2>
+
+      <ul class="review-grid">
+        <li class="review-card" tabindex="0" role="button" data-modal-trigger data-img="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?auto=format&fit=crop&w=1400&q=80" data-name="익명 / 갑목 (甲木)" data-role="취업준비생">
+          <div class="review-stars" aria-label="5점 만점에 5점">★★★★★</div>
+          <p class="body-1">고민은 많은데 말할 사람이 없어서 처음 사용 했어요. 의심했는데 AI 상담을 받으면서 제 패턴을 명확히 보고 방향을 잡을 수 있게 도움을 받았습니다.</p>
+          <div class="review-author">
+            <span class="author-avatar" aria-hidden="true">🍀</span>
+            <div>
+              <p class="author-name">익명 / 갑목 (甲木)</p>
+              <p class="author-role">취업준비생</p>
+            </div>
+          </div>
+        </li>
+        <li class="review-card" tabindex="0" role="button" data-modal-trigger data-img="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1400&q=80" data-name="익명 / 계수 (癸水)" data-role="직장인 3년차">
+          <div class="review-stars" aria-label="5점 만점에 5점">★★★★★</div>
+          <p class="body-1">이직을 고민할 때마다 흔들렸는데, 제 명반을 기반으로 한 조언 덕분에 스스로 결정을 내릴 용기가 생겼어요. 따뜻한 위로가 큰 힘이 됐습니다.</p>
+          <div class="review-author">
+            <span class="author-avatar" aria-hidden="true">🌙</span>
+            <div>
+              <p class="author-name">익명 / 계수 (癸水)</p>
+              <p class="author-role">직장인 3년차</p>
+            </div>
+          </div>
+        </li>
+        <li class="review-card" tabindex="0" role="button" data-modal-trigger data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80" data-name="익명 / 병화 (丙火)" data-role="대학원생">
+          <div class="review-stars" aria-label="5점 만점에 5점">★★★★★</div>
+          <p class="body-1">비슷한 고민을 가진 사람들과 익명으로 이야기 나눌 수 있어서 혼자가 아니라는 걸 느꼈어요. 매일 조금씩 마음이 편안해지고 있습니다.</p>
+          <div class="review-author">
+            <span class="author-avatar" aria-hidden="true">✨</span>
+            <div>
+              <p class="author-name">익명 / 병화 (丙火)</p>
+              <p class="author-role">대학원생</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== 하단 CTA ==================== -->
+  <section class="section final-cta" aria-labelledby="final-cta-heading">
+    <div class="container final-cta-inner">
+      <h2 id="final-cta-heading" class="h1">
+        답을 찾아 헤매는<br>당신의 여정을<br>지금 바로 시작하세요
+      </h2>
+      <p class="section-desc">당신의 고민을 무엇이든 물어보세요.<br><strong>"마법의 소라고둥"</strong>이 답을 알려드립니다.</p>
+
+      <figure class="conch-figure">
+        <img src="assets/conch-shell.png" alt="달빛 아래 모래사장 위에 놓인 마법의 소라고둥">
+      </figure>
+
+      <a href="#" class="btn btn-primary btn-large" id="finalCtaBtn">
+        <span aria-hidden="true">✦</span> 마법의 소라고둥과 대화하기
+      </a>
+      <p class="fine-print">첫 상담 무료 · 가입시 쿠폰팩 증정 · 가입 3분</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== 푸터 ==================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo">
+      <span class="logo-icon" aria-hidden="true">🐚</span>
+      <span class="logo-text">마법의 소라고둥</span>
+    </a>
+    <p class="footer-tagline">고민을 해결해주는 당신만의 마법고둥</p>
+
+    <nav class="footer-nav" aria-label="바닥글 링크">
+      <ul class="footer-col">
+        <li><a href="#service">서비스 소개</a></li>
+        <li><a href="#process">이용 방법</a></li>
+        <li><a href="#">자주 묻는 질문</a></li>
+      </ul>
+      <ul class="footer-col">
+        <li><a href="#hero-cta">AI 상담</a></li>
+        <li><a href="#reviews">커뮤니티</a></li>
+        <li><a href="#">개인정보 보호</a></li>
+      </ul>
+    </nav>
+
+    <p class="copyright">© 2026 MAGICALCONCHSHELL. All rights reserved. Seoul, South Korea</p>
+  </div>
+</footer>
+
+<!-- ==================== 리뷰 라이트박스 모달 ==================== -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalName" id="modalDialog">
+    <button class="modal-close" id="modalCloseBtn" aria-label="모달 닫기">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <img class="modal-img" id="modalImg" src="" alt="">
+    <div class="modal-caption">
+      <p class="author-name" id="modalName"></p>
+      <p class="author-role" id="modalRole"></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
